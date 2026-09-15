@@ -46,13 +46,13 @@ Four module instances; three runs per build, interleaved.
 
 ### iPhone 16 Pro, iOS 26.6.2
 
-The phone ran iOS 26.6.2 (23G90); Safari's user agent reports version 26.6.1. Runs used the same page and defaults, opened from the phone over HTTPS, one fresh tab per run. They came in two sessions. A device log was collected over USB after each session, and together the logs cover all eight runs.
+The phone ran iOS 26.6.2 (23G90); Safari's user agent reports version 26.6.1. Runs used the same page and defaults, opened from the phone over HTTPS, one fresh tab per run. They came in three sessions. A device log was collected over USB after each session, and together the logs cover all ten runs.
 
 | Build | Runs | JavaScript work | Web content process killed | Kill time after the work |
 | --- | ---: | ---: | --- | ---: |
 | Asyncify, unmodified | 4 | 1.95, 3.10, 1.57, 2.35 s | 4 of 4, jetsam `per-process-limit` | 5.9, 4.9, 5.9, 5.0 s |
-| Asyncify, three bodies over 40 KB padded | 2 | 2.23, 2.45 s | 0 of 2 | none |
-| Non-Asyncify, unmodified | 2 | 0.96, 1.12 s | 0 of 2 | none |
+| Asyncify, three bodies over 40 KB padded | 3 | 2.23, 2.45, 1.08 s | 0 of 3 | none |
+| Non-Asyncify, unmodified | 3 | 0.96, 1.12, 1.13 s | 0 of 3 | none |
 
 Each kill shows the same sequence in the device log:
 
