@@ -2,6 +2,8 @@
 
 A reduced test case for [WebKit bug 304810](https://bugs.webkit.org/show_bug.cgi?id=304810), "High memory usage in WASM compilation thread".
 
+**Try it:** open https://frankhinek.github.io/webkit-wasm-compiler-memory-repro/ in Safari on a Mac or an iPhone and tap **Asyncify build**.
+
 The page runs a small in-memory SQLite workload in four instances of the unmodified `@journeyapps/wa-sqlite` 2.0.4 Asyncify build. The JavaScript work finishes in about one second. In Safari 26.6.1 on macOS, the tab's web content process then climbs to about 4 GiB over the next several seconds, with threads in JavaScriptCore's optimizing WebAssembly compiler (OMG) and its greedy register allocator. The allocation is transient.
 
 Two controls use the same page and workload:
