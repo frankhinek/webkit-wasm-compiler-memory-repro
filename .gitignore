@@ -1,0 +1,8 @@
+# Local-only files/folders
+*.local.*
+
+# Build output
+/target
+dist/
+results/
+

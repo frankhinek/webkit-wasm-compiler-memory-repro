@@ -1,0 +1,24 @@
+<!doctype html>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>WebKit WebAssembly compiler memory repro</title>
+<style>
+  body { font: 16px -apple-system, system-ui, sans-serif; margin: 16px; max-width: 760px; line-height: 1.45; }
+  button { font: inherit; padding: 10px 14px; margin: 4px 4px 4px 0; }
+  #status { font-weight: 600; }
+  #log { white-space: pre-wrap; font: 12px ui-monospace, monospace; background: #f3f3f3; padding: 8px; }
+</style>
+<h1>WebKit WebAssembly compiler memory repro</h1>
+<p>
+  Runs a small in-memory SQLite workload on the main thread in four separate instances of an unmodified
+  <code>@journeyapps/wa-sqlite</code> 2.0.4 build. There is no storage, no worker and no asynchronous I/O.
+  Use one build per fresh tab, then watch the tab's web content process memory for about 20 seconds.
+</p>
+<p>
+  <button data-build="asyncify">Asyncify build</button>
+  <button data-build="asyncify-padded">Asyncify build, three largest functions padded</button>
+  <button data-build="sync">Non-Asyncify build</button>
+</p>
+<p id="status">Ready.</p>
+<pre id="log"></pre>
+<script type="module" src="repro.js"></script>

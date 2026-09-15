@@ -1,0 +1,19 @@
+{
+  "package": "@journeyapps/wa-sqlite",
+  "version": "2.0.4",
+  "tarball": "https://registry.npmjs.org/@journeyapps/wa-sqlite/-/wa-sqlite-2.0.4.tgz",
+  "integrity": "sha512-c5WE1UPOgDVy8+v63NRRhWsQqvWgkhS1TZKBxEYW/MS7bJE4ndbOfofz9covF7N2KElQVVRZ0qd+XjiS4zt63g==",
+  "repository": "git+https://github.com/powersync-ja/wa-sqlite.git",
+  "unmodified": true,
+  "files": {
+    "dist/wa-sqlite-async.mjs": "1376b2dc6edebbdded8074eaf166e927d46bd8bfd809e355dd90af2b804a3bb9",
+    "dist/wa-sqlite-async.wasm": "97152829526d5e4714ae5dcfa85dfc1e48a17f8b08f2681f46220cfb58926bff",
+    "dist/wa-sqlite.mjs": "1701e70dd6fc7f358631105f4e8062c0fb2d8a2be3132ff5e4dca0aa9501a48f",
+    "dist/wa-sqlite.wasm": "c2c86269d8fd0b0913ea40c2b07d82763f00e293b9e4d7c406f5ed95345ddb25",
+    "src/sqlite-api.js": "b0fa1d593d6c47f78ca04872f9f799518eeb146f9f07b004ca0a2adb3e38608c",
+    "src/sqlite-constants.js": "f7b570f0c39e4b54c99f2598b6ad42018d4d8bf791861ede20d295628ae49f8f",
+    "src/FacadeVFS.js": "537a1f34dfda12571c4fa7a0b85346ca9ea16faa953d9ecb190a6dadd0a5acbf",
+    "src/VFS.js": "55e7455e2ec0000cc4ba7a8bf7882f414a40f2a0ba6eb4c4ac847f379f54d92f",
+    "src/examples/MemoryVFS.js": "fa3ecacbbe7bfcaab275c0b95fcaba9b5b69f7e843a36f945de306984b027101"
+  }
+}

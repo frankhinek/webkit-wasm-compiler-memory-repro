@@ -1,0 +1,34 @@
+{
+  "source": {
+    "file": "wa-sqlite-async.wasm",
+    "sha256": "97152829526d5e4714ae5dcfa85dfc1e48a17f8b08f2681f46220cfb58926bff",
+    "bytes": 2256849
+  },
+  "output": {
+    "file": "wa-sqlite-async.wasm",
+    "sha256": "3dc3101d073fc88b8225cff6c0424a7d06c886a70df0a93beed7c1f4dac0716e",
+    "bytes": 2558868
+  },
+  "paddedBodyBytes": 160000,
+  "changes": [
+    {
+      "function": 2887,
+      "definedFunction": 2818,
+      "beforeBytes": 75912,
+      "afterBytes": 160000
+    },
+    {
+      "function": 2676,
+      "definedFunction": 2607,
+      "beforeBytes": 54057,
+      "afterBytes": 160000
+    },
+    {
+      "function": 844,
+      "definedFunction": 775,
+      "beforeBytes": 48012,
+      "afterBytes": 160000
+    }
+  ],
+  "validation": "WebAssembly.validate is true and imports and exports are unchanged (checked in Node)"
+}
